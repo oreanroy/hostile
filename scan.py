@@ -1,3 +1,5 @@
+## Written by oreanroy
+
 import socket
 import subprocess
 
@@ -52,7 +54,7 @@ def normal_scan(ip):
 
 # this fcuntion goes through all possible ip adress on the network and tries to ping it
 def run_scan_normal():
-  for i in range(0, 25):
+  for i in range(0, 255):
     adress=""
     split = split_ip(network_ip)
     for terms in split:
